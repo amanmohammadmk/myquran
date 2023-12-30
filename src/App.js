@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Edition from './components/Edition';
+import { Route, Routes } from 'react-router-dom';
+import More from './components/More';
+import QuranSearch from './components/QuranSearch';
+import Home from './components/Home';
+import Juz from './components/Juz';
+import Ayah from './components/Ayah';
+import Voice from './components/Voice';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+  
+      <Routes >
+        
+        <Route path='/' element={ <Home />} />
+        <Route path='/edition' element={ <Edition />} />
+        <Route path='/ayahs/:surahNumber' element={ <More/>} />
+        <Route path='/search' element={ <QuranSearch/>} />
+        <Route path='/juz' element={ <Juz/>} />
+        <Route path='/ayah' element={ <Ayah/>} />
+        <Route path='/voice' element={ <Voice/>} />
+        
+        
+        
+        
+      
+       
+    
+      </Routes>
+
+
+
+
     </div>
   );
 }
