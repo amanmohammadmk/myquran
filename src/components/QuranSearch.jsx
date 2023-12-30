@@ -72,24 +72,10 @@ function QuranSearch() {
 
         <h2>{name}</h2>
 
-        {/* {arab.map((ayah, index) => (
-          <div style={{ width: "90%", height: "auto" }} className='p-3 container mt-4 shadow-lg text-center d-flex justify-content-center align-items-center'>
-            <p key={ayah.number} className='text-right'>
-              {index + 1}: <span className='text-clack fs-5'>{ayah.text}</span>
-            </p>
-          </div>
-        ))}
-
-        {eng.map((ayah, index) => (
-          <div style={{ width: "90%", height: "auto" }} className='p-3 container mt-4 shadow-lg text-center d-flex flex-column justify-content-center align-items-center'>
-            <p key={ayah.number} className='text-right'>
-              {index + 1}: <span className='text-clack fs-5'>{ayah.text}</span>
-            </p>
-          </div>
-        ))} */}
+   
 
         <div>
-          {arab.map((ayah, index) => (
+          {arab.map((ayah, index) => ( 
             <div className='p-3 bg-white container rounded mt-4 shadow-lg text-center d-flex flex-column justify-content-center align-items-center' key={index}>
      
               {index + 1}  <p>{ayah.text}</p>
@@ -101,6 +87,7 @@ function QuranSearch() {
                 </div>
               )}
             </div>
+            
           ))}
         </div>
 

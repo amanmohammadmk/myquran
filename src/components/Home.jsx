@@ -122,7 +122,7 @@ function Home() {
                     <div className='item d-flex flex-column align-items-center gap-1 m-5'>
                         <Link to={'/search'} style={{ textDecoration: "none", color: "black" }} className='d-flex flex-column gap-3 align-items-center' >
                             <img src="https://play-lh.googleusercontent.com/QLbK0Aqi1wnxAxLcbIzcMfEzkRrdWOuGt4EdOLft1uzPJntoeOkj08uQ5Q22m8He0U5C" width={150} height={150} alt="" />
-                            <h2 className='text-danger'>Download</h2>
+                            <h2 className='text-danger'>Search</h2>
                         </Link>
                     </div>
 
